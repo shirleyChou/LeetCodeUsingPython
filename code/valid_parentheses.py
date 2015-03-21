@@ -31,12 +31,15 @@ class Solution:
 class Solution:
     # @return a boolean
     def isValid(self, s):
-        stack = []
-        dict = {']':'[','}':'{',')':'('}
-        for char in s:
-            if char in dict.values():
-                stack.append(char)
-            elif char in dict.keys():
-                if stack == [] or stack.pop() != dict[char]:
-                    return False
-        return stack == []
+        l = []
+        d = {')':'(', '}':'{', ']':'['}
+        if s[0] in d.keys():
+            return False
+        else:
+            for char in s:
+                if char in d.values():
+                    l.append(char)
+                elif char in d.keys():
+                    if l == [] or l.pop() != d[char]:
+                        return False
+            return l == []
