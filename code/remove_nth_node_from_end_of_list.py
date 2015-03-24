@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-# https://oj.leetcode.com/problems/add-binary/
+# https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 # Difficulty: Easy
 # Tags: Linked List, Two Pointers
 
